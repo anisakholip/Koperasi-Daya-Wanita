@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulasi Koperasi</title>
+    <link rel="stylesheet" href="pinjaman.css">
+</head>
+<body>
+  <section class="pinjam">
+    <div class="header-content">
+            <div class="section">
+                <h1>PINJAMAN</h1>
+                <p>Koperasi Daya Wanita melayani anggotanya untuk simpan pinjam dana, membantu modal usaha, pendanaan darurat dan lain sebagainya.</p>
+            </div>
+            <div class="section">
+                <h1>SIMPANAN</h1>
+                <p>Koperasi Daya Wanita melayani anggotanya untuk simpan pinjam dana, membantu modal usaha, pendanaan darurat dan lain sebagainya.</p>
+            </div>
+        </div>
+
+     <div class="simulasi">
+        <h2>Simulasikan Simpanan Kamu</h2>
+        <p>Simulasi ini merupakan ilustrasi perhitungan simpanan, perhitungan sebenarnya mengikuti perhitungan di sistem Koperasi Daya Wanita</p>
+        <div class="slider-container">
+            <div class="input-group">
+                <label for="simpanan">Jumlah Simpanan</label>
+                <input type="range" id="simpanan" min="0" max="200000000" step="100000" value="150000000" oninput="updateSimpanan()">
+                <span id="simpananValue">Rp 150.000.000</span>
+            </div>
+            <div class="input-group">
+                <label for="jangkaWaktuSimpanan">Jangka Waktu</label>
+                <input type="range" id="jangkaWaktuSimpanan" min="1" max="60" value="6" oninput="updateSimpanan()">
+                <span id="jangkaWaktuSimpananValue">6 Bulan</span>
+            </div>
+            <p>Persentase: 0.5%</p>
+            <div class="result-group">
+                <p>Total Bunga: <span id="totalBungaSimpanan">Rp 0</span></p>
+                <p>Total Simpanan: <span id="totalSimpanan">Rp 0</span></p>
+            </div>
+    </div>
+<div class="simulasi">
+        <h2>Simulasikan Pinjaman Kamu</h2>
+        <p>Simulasi ini merupakan ilustrasi perhitungan pinjaman, perhitungan sebenarnya mengikuti perhitungan di sistem Koperasi Daya Wanita</p>
+        <div class="slider-container">
+            <div class="input-group">
+    <label for="pinjaman">Jumlah Pinjaman</label>
+    <input type="range" id="pinjaman" min="0" max="200000000" step="100000" value="150000000" oninput="updatePinjaman()">
+    <span id="pinjamanValue">Rp 150.000.000</span>
+</div>
+<div class="input-group">
+    <label for="jangkaWaktuPinjaman">Jangka Waktu</label>
+    <input type="range" id="jangkaWaktuPinjaman" min="1" max="60" value="6" oninput="updatePinjaman()">
+    <span id="jangkaWaktuPinjamanValue">6 Bulan</span>
+</div>
+           <p>Persentase: 0.5%</p>
+<div class="result-group">
+    <p>Total Bunga: <span id="totalBungaPinjaman">Rp 0</span></p>
+    <p>Total Pinjaman: <span id="totalPinjaman">Rp 0</span></p>
+</div>
+    </div>
+    <div class="info">
+        <div class="box">
+            <h3>01</h3>
+          <h3>Multiguna</h3>
+            <p>Jenis layanan pinjaman atau pembiayaan yang dapat digunakan untuk berbagai keperluan oleh anggotanya dalam memenuhi berbagai kebutuhan pribadi atau usaha mereka.</p>
+        </div>
+        <div class="box">
+            <h3>02</h3>
+          <h3>Modal Usaha</h3>
+            <p>Dana yang disediakan oleh koperasi untuk mendukung anggotanya dalam memulai, usaha mereka. Tujuan utama dari penyediaan modal usaha ini untuk memberdayakan perempuan agar dapat mencapai kemandirian ekonomi.</p>
+        </div>
+        <div class="box">
+            <h3>03</h3>
+          <h3>Darurat</h3>
+            <p>Program yang dirancang untuk memberikan bantuan keuangan cepat dan mudah diakses bagi anggotanya yang menghadapi kebutuhan mendesak atau keadaan darurat. Layanan ini bertujuan untuk memberikan keamanan finansial.</p>
+        </div>
+    </div>
+  </section>
+    <script src="pinjaman.js"></script>
+</body>
+</html>
